@@ -221,7 +221,7 @@
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
-  margin-top: 90px
+  margin-top: 90px;
 }
 
 .section-subtitle_theme_dark {
@@ -245,11 +245,6 @@
   font-weight: bold;
 }
 
-.table__text_theme_dark {
-  line-height: 1.2;
-  font-size: 18px;
-}
-
 .kaufman__triangle {
   width: 877px;
   height: 877px;
@@ -267,6 +262,8 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+  line-height: 1.2;
+  font-size: 18px;
 }
 
 .footer {
