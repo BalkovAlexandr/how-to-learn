@@ -6,7 +6,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
@@ -17,7 +17,7 @@
   background-color: #f2f2f2;
   display: flex;
   align-items: center;
-  position: relative;  
+  position: relative;
 }
 
 .logo {
@@ -52,8 +52,8 @@
 }
 
 .header__link {
- color: #2f80ed;
- text-decoration: none;
+  color: #2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -95,7 +95,6 @@
   font-size: 18px;
   color: #2f80ed;
   text-decoration: none;
-  
 }
 
 .two-columns__main-text {
@@ -104,7 +103,7 @@
 }
 
 .two-columns__span-accent {
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .two-columns__paragraph {
@@ -146,7 +145,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: 0;
-  
 }
 
 .table__cell {
@@ -170,25 +168,31 @@
 }
 
 .feinman {
+  height: 890px;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
+  align-items: center;
 }
 
 .feynman__title {
+  margin: 0;
   width: 648px;
-  margin: 100px auto 70px;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  z-index: 1;
 }
 
 .feynman__subtitle {
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
-  margin: auto;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -199,12 +203,14 @@
   position: absolute;
   right: 48px;
   top: 50%;
-  
 }
 
 .feynman__img {
   width: 867px;
   height: 637px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .kaufman {
@@ -244,7 +250,6 @@
   background-size: cover;
   right: -210px;
   top: 0;
-
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -301,6 +306,12 @@
   flex-direction: column;
 }
 
+.footer__column {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
@@ -309,6 +320,7 @@
 }
 
 .footer__column-links {
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   text-decoration: none;
