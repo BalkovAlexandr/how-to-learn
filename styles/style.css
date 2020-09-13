@@ -18,12 +18,12 @@
   display: flex;
   align-items: center;
   position: relative;
+  z-index: -2;
 }
 
 .logo {
   width: 183px;
   height: 32px;
-  z-index: 3;
 }
 
 .logo__place_header {
@@ -38,6 +38,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  z-index: 1;
 }
 
 .header__subtitle {
@@ -48,7 +49,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 3;
+  z-index: 1;
 }
 
 .header__link {
@@ -59,10 +60,10 @@
 .header__main-illustration {
   width: 765px;
   height: 608px;
+  object-fit: cover;
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -74,11 +75,11 @@
   position: absolute;
   right: 0;
   top: 64px;
+  z-index: -1;
 }
 
 .description {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 100px 0;
 }
@@ -94,7 +95,8 @@
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
-  text-decoration: none;
+  margin: 0;
+  font-weight: normal;
 }
 
 .two-columns__main-text {
@@ -113,10 +115,14 @@
   margin-bottom: 30px;
 }
 
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
 .digits {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
+  margin: 100px auto;
 }
 
 .section-title {
@@ -167,13 +173,14 @@
   margin-bottom: 0px;
 }
 
-.feinman {
-  height: 890px;
+.feynman {
+  min-height: 790px;
   display: flex;
   flex-direction: column;
   position: relative;
   background-color: #f2f2f2;
   align-items: center;
+  padding-top: 100px;
 }
 
 .feynman__title {
@@ -183,7 +190,6 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  padding-top: 100px;
   padding-bottom: 70px;
   z-index: 1;
 }
@@ -220,26 +226,20 @@
   padding-bottom: 90px;
   overflow: hidden;
   position: relative;
+  padding-top: 90px;
+  z-index: -2;
 }
 
 .section-title_theme_dark {
-  color: white;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 90px;
+  color: #f2f2f2;
 }
 
 .section-subtitle_theme_dark {
-  color: white;
-  line-height: 34px;
-  font-size: 24px;
+  color: #f2f2f2;
 }
 
 .table__heading_theme_dark {
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
+  color: #f2f2f2;
 }
 
 .kaufman__triangle {
@@ -250,17 +250,15 @@
   background-size: cover;
   right: -210px;
   top: 0;
+  z-index: -1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  color: #f2f2f2;
   margin-right: 0;
   margin-top: 80px;
-  line-height: 1.2;
-  font-size: 18px;
-  z-index: 1;
 }
 
 .footer {
@@ -272,7 +270,6 @@
 }
 
 .footer__columns {
-  color: white;
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -286,11 +283,11 @@
 }
 
 .logo__place_footer {
-  width: 183px;
   height: 35px;
 }
 
-.footer__column_content_author {
+.footer__author {
+  color: #f2f2f2;
   line-height: 25px;
   font-size: 18px;
   margin: 18px 0;
@@ -313,6 +310,8 @@
 }
 
 .footer__column-heading {
+  padding: 0;
+  color: #f2f2f2;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
@@ -321,10 +320,16 @@
 
 .footer__column-links {
   padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer__column-link {
+  padding: 0;
   line-height: 30px;
   font-size: 18px;
   text-decoration: none;
-  color: white;
+  color: #f2f2f2;
   margin-bottom: 0 0 16px 0;
 }
 
