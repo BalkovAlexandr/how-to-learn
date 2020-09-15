@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .logo {
@@ -26,7 +26,7 @@
   height: 32px;
 }
 
-.logo__place_header {
+.logo_place_header {
   top: 30px;
   left: 64px;
   position: absolute;
@@ -227,7 +227,7 @@
   overflow: hidden;
   position: relative;
   padding-top: 90px;
-  z-index: -2;
+  z-index: 0;
 }
 
 .section-title_theme_dark {
@@ -256,9 +256,12 @@
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
-  color: #f2f2f2;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__text_theme_dark {
+  color: #f2f2f2;
 }
 
 .footer {
@@ -282,7 +285,7 @@
   flex-basis: 711px;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   height: 35px;
 }
 
@@ -320,7 +323,7 @@
 
 .footer__column-links {
   padding: 0;
-  margin: 0;
+  margin: 0 0 16px 0;
   list-style-type: none;
 }
 
@@ -330,7 +333,6 @@
   font-size: 18px;
   text-decoration: none;
   color: #f2f2f2;
-  margin-bottom: 0 0 16px 0;
 }
 
 .footer__social-icon {
