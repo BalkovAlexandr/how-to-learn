@@ -1,8 +1,10 @@
+<!DOCTYPE html>
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="index.css"> 
+        <!-- Не получается подключить стили через "pages/index.css" уже пробовал и ставить . и / и пересоздавать папку и и называть её по другому, не могу понять в чём проблема-->
         <title>Научиться учиться</title>
     </head>
     <body>
@@ -65,8 +67,8 @@
                     <h3 class="section-title">Видео нa TED</h3>
                     <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
                     <div class="video__iframes">
-                        <iframe class="video__frame" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <iframe class="video__frame" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </section>
 
@@ -89,7 +91,6 @@
                     <h2 class="feynman__title">Метод Фейнмана</h2>
                     <p class="feynman__subtitle">Выучить и не забыть.</p>
                     <a href="#" class="feynman__link">Подробнее &rarr;</a>
-                    <img class="feynman__img" src="./images/feynman.png" alt="фейнман" />
                 </section>
 
                 <section class="digits">
@@ -198,12 +199,20 @@
                 <section class="resources">
                     <h2 class="section-title">Полезные ресурсы</h2>
                     <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-                    <div class="resources__logo-zone">
-                        <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-arzamas.svg" alt="арзамас"></a>
-                        <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-n1.svg" alt="н+1"></a>
-                        <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-strelka.svg" alt="стрелка"></a>
-                        <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-polka.svg" alt="полка"></a>
-                    </div>
+                    <ul class="resources__logo-zone">
+                        <li>
+                            <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-arzamas.svg" alt="арзамас"></a>
+                        </li>
+                        <li>
+                            <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-n1.svg" alt="н+1"></a>
+                        </li>
+                        <li>
+                            <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-strelka.svg" alt="стрелка"></a>
+                        </li>
+                        <li>
+                            <a class="resources__link" href="#"><img class="resources__logo" src="images/resources-polka.svg" alt="полка"></a>
+                        </li>
+                    </ul>
                 </section>
             </main>
             <footer class="footer">
